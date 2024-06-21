@@ -1,0 +1,23 @@
+{
+  "name": "statstrap",
+  "version": "0.0.1-alpha",
+  "description": "A frontend utility for easy Statit access",
+  "main": "src/statstrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyboardcat1/statstrap.git"
+  },
+  "keywords": [
+    "Statit",
+    "HTML"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyboardcat1/statstrap/issues"
+  },
+  "homepage": "https://github.com/keyboardcat1/statstrap#readme"
+}
