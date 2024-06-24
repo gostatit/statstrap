@@ -14,6 +14,7 @@ async function post(action, input) {
 }
 
 document.querySelectorAll('[statit]').forEach(async element => {
+  try {
   let query = element.getAttribute('statit').split(':');
   let action = query[0]
   let input = {};
@@ -21,11 +22,12 @@ document.querySelectorAll('[statit]').forEach(async element => {
   
   const data = await post(action, input);
   if (data.Error)
-    element.innerHTML = [data.Error.code,data.Error.message,data.Error.param].join(':');
+     element.innerHTML = [data.Error.code,data.Error.message,data.Error.param].join(':');
   else if(data.value)
-    element.innerHTML = data.value;
-  else
+     element.innerHTML = data.value;
+  } catch (error) {
     element.innerHTML = 'ERROR_HTML';
-});
+  }
+});  
 
 
