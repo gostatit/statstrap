@@ -27,7 +27,7 @@ Or integrate Statit's metric charts using the iFrame endpoint!
 
 #### Result
 
-<img src="examples/image.png"/>
+<img src="examples/screenshot.png"/>
 
 
 ### Basic syntax
