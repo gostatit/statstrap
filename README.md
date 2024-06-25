@@ -16,7 +16,7 @@ Place Statstrap's CSS and JS tags in your HTML document's head and body respecti
 Use the `statit` tag attribute in any of your text elements for direct Statit access
 
 ```html
-<b statit="getObs:id=xr/daily/eur/usd" ></b>
+<b statit="getValue:id=xr/daily/eur/usd" ></b>
 ```
 
 Or integrate Statit's metric charts using the iFrame endpoint!

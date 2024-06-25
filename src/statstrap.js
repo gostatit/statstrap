@@ -23,8 +23,8 @@ document.querySelectorAll('[statit]').forEach(async element => {
   const data = await post(action, input);
   if (data.Error)
      element.innerHTML = [data.Error.code,data.Error.message].join(':');
-  else if(data.value)
-     element.innerHTML = data.value;
+  else if(data.response)
+     element.innerHTML = data.response;
   } catch (error) {
     element.innerHTML = 'ERROR_HTML';
   }
